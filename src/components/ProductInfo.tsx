@@ -45,7 +45,9 @@ export function ProductInfo({ name, price, description }: ProductInfoProps) {
         
         <Button 
           variant="secondary" 
-          className={`px-4 py-3 ${isLiked ? 'bg-red-500 text-white border-red-500 hover:bg-red-600' : ''}`}
+          className={`px-4 py-3 ${isLiked 
+            ? 'bg-red-500 text-white border-red-500 bg-red-600' 
+            : 'bg-white text-gray-700 border-gray-300 hover:bg-gray-100'}`}
           onClick={() => setIsLiked(!isLiked)}
         >
           <Heart size={22} />
